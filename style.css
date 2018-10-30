@@ -578,8 +578,34 @@ header h2 {
       margin-bottom: 1rem;
    }
    
-   .box-e .box-f .box-g .box-h .box-i .box-j {
+   .box-e {
       margin-left: auto;
       margin-right: auto;
    }
+   
+   .box-f {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .box-g {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .box-h {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .box-i {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .box-j {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
 }
