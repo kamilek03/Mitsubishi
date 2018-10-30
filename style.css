@@ -381,6 +381,7 @@ header h2 {
       margin-left: auto;
       margin-right: auto;
       padding-top:5px;
+      height: 100px;
    }
    
    header {
@@ -542,7 +543,7 @@ header h2 {
       flex-direction: column;
       margin-left: auto;
       margin-right: auto;
-      height: 150px;
+      height: 100px;
    }
    
    .boxes {
