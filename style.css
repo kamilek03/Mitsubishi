@@ -400,7 +400,7 @@ header h2 {
       font-weight: 800;
       font-size: 2rem;
       width: 100%;
-      color: var(--dark);
+      color: var(--white);
       text-transform: uppercase;
       line-height: 40px;
       margin-bottom: 7px;
@@ -535,13 +535,51 @@ header h2 {
    }
    
    .img {
-   width: 100%;
-   background-size: cover;
-   background-position: center;
-   display: flex;
-   flex-direction: column;
-   margin-left: auto;
-   margin-right: auto;
-   height: 70%;
-}
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      height: 70%;
+   }
+   
+   .boxes {
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-areas: 
+      'box-e'
+      'box-f'
+      'box-g'
+      'box-h'
+      'box-i'
+      'box-j';
+      grid-gap: 60px;
+      background-color: var(--light);
+      width: 100%;
+      padding-bottom: 4rem;
+   }
+
+   .box {
+      background-color: var(--light);
+      width: 350px;
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+   }
+
+   .imgbox {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 70%;
+      height: 25px;
+      margin-bottom: 1rem;
+   }
+   
+   .box-e .box-f .box-g .box-h .box-i .box-j {
+      margin-left: auto;
+      margin-right: auto;
+   }
 }
