@@ -381,7 +381,7 @@ header h2 {
       margin-left: auto;
       margin-right: auto;
       padding-top:5px;
-      height: 100px;
+      height: 150px;
    }
    
    header {
@@ -532,7 +532,7 @@ header h2 {
       display: flex;
       flex-direction: column;
       width:70%;
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
    }
    
    .img {
@@ -543,7 +543,7 @@ header h2 {
       flex-direction: column;
       margin-left: auto;
       margin-right: auto;
-      height: 100px;
+      height: 150px;
    }
    
    .boxes {
