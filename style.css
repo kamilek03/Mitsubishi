@@ -2,6 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -11,7 +12,7 @@
 }
 
 .hide {
-	opacity:0
+	opacity:0;
 }
 
 .show {
@@ -213,7 +214,133 @@ header h2 {
    margin-bottom: 1rem;
 }
 
+.config-box {
+   margin-top: 120px;
+   display: grid;
+   grid-template-columns: 1fr 250px 250px 250px 1fr;
+   grid-gap: 30px;
+   background-color: var(--light);
+   width: 100%;
+   padding-bottom: 4rem; 
+}
+
+.config {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 40px;
+   width: 100%;
+   height: 200px;
+   background-color: var(--dark);
+   
+}
+
+.tekst {
+   width: 100%;
+   height: 65px;
+   border-top: 1px solid var(--white);
+   margin-top: 55px;
+   transition-duration: 0.7s;
+}
+
+.tekst p {
+   font-size: 1.2rem; color: var(--white);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 13px;
+}
+
+.config:hover {
+   opacity: 0.8;
+}
+
+.good {
+   margin-top: 60px;
+   background-image: url(image-ful.jpg);
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   padding: 10rem;
+}
+
+.good h1 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   font-size: 3rem;
+   color: var(--white);
+   text-transform: uppercase;
+   max-width: 700px;
+   line-height: 70px;
+   margin-bottom: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.napis {
+   min-width: 100%;
+}
+
+.config1-box {
+   margin-top: 120px;
+   display: grid;
+   grid-template-columns: 1fr 250px 250px 250px 1fr;
+   grid-gap: 30px;
+   background-color: var(--light);
+   width: 100%;
+   padding-bottom: 4rem; 
+}
+
+.config1 {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 40px;
+   width: 100%;
+   height: 200px;
+   background-color: var(--dark);
+}
+
+.config1 p {
+   margin-left: 20px;
+   margin-right: 20px;
+   font-size: 1.5rem; color: var(--white);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 13px;
+   line-height: 30px;
+}
+
+.good h2 {
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 900px;
+   font-size: 1rem; color: var(--white);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 10px;
+   line-height: 35px;
+}
+
+
 @media only screen and (max-width: 1200px) {
+   .hide {
+	   opacity:1;
+   }
+
+   .show {
+       opacity: 1;
+   }
   .act {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -263,6 +390,30 @@ header h2 {
    
    .box-j {
       grid-area: box-j;
+   }
+   
+   .box-k {
+      grid-area: box-k;
+   }
+   
+   .box-l {
+      grid-area: box-l;
+   }
+   
+   .box-m {
+      grid-area: box-m;
+   }
+   
+   .box-p {
+      grid-area: box-p;
+   }
+   
+   .box-r {
+      grid-area: box-r;
+   }
+   
+   .box-o {
+      grid-area: box-o;
    }
    
    header {
@@ -341,6 +492,30 @@ header h2 {
       margin-bottom: 1rem;
    }
 }
+
+@media only screen and (max-width: 900px) {
+   .config-box {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+      '. box-k .'
+      '. box-l .'
+      '. box-m .';
+      grid-gap: 30px;
+      background-color: var(--light);
+      width: 100%;
+      padding-bottom: 4rem; 
+   }
+
+   .config {
+      padding-top: 40px;
+      width: 300px;
+      height: 200px;
+      background-color: var(--dark);
+   }
+   
+} 
 
 @media only screen and (max-width: 800px) {
    .act {
