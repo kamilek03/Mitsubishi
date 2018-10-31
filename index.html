@@ -15,19 +15,19 @@
          <h2 class="animated fadeInLeft">Taniej o podatek wat</h2>
          <div class="btn animated fadeInLeft"><p>Dowiedz się więcej!<p></div>
       </header>
-      <section class="news">
+      <section class="news" data-animate="fadeInLeftBig">
          <h1>Promocje i aktualności</h1>
       </section>
-      <section class="act">
+      <section class="act" data-animate="fadeInLeftBig">
          <div class="actual box-a one"><img class="img" src="akt.jpg" alt=""><h5>Oferta</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, quisquam.</p></div>
          <div class="actual box-b"><img class="img" src="akt1.jpg" alt=""><h5>Oferta</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, quisquam.</p></div>
          <div class="actual box-c"><img class="img" src="akt2.jpg" alt=""><h5>Oferta</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, quisquam.</p></div>
          <div class="actual box-d"><img class="img" src="akt3.jpg" alt=""><h5>Oferta</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, quisquam.</p></div>
       </section>
-      <section class="models">
+      <section class="models" data-animate="fadeInLeftBig">
          <h1>Poznaj nasze modele</h1>
       </section>
-      <section class="boxes">
+      <section class="boxes" data-animate="fadeInLeftBig">
          <div class="box box-e one"><img class="imgbox" src="name1.png" alt=""><img class="" src="box1.png" alt=""></div>
          <div class="box box-f"><img class="imgbox" src="name2.png" alt=""><img class="" src="box2.png" alt=""></div>
          <div class="box box-g"><img class="imgbox" src="name3.png" alt=""><img class="" src="box3.png" alt=""></div>
@@ -42,5 +42,22 @@
       </section>
       
    </div>
+   
+   
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="jquery.viewportchecker.js"></script>
+   <script>
+      $(document).ready(function(){
+
+		$('*[data-animate]').addClass('hide').each(function(){
+         $(this).viewportChecker({
+         classToAdd: 'show animated ' + $(this).data('animate'),
+         classToRemove: 'hide',
+         offset: '30%'
+         });
+        });
+
+      });
+   </script>
 </body>
 </html>
