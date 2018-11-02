@@ -429,6 +429,22 @@ header h2 {
    line-height: 35px;
 }
 
+footer {
+   width: 100%;
+   height: 3rem;
+   background-color: var(--white);
+}
+
+.footer p {
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 0.9rem; color: var(--dark);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   text-align: center;
+   padding-top: 1rem;
+}
+
 @media only screen and (max-width: 1900px) {
    
    .info {
@@ -1337,3 +1353,14 @@ header h2 {
       margin-left: auto;
       margin-right: auto;
    }
+   
+   .footer p {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.6rem; color: var(--dark);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      padding-top: 1.2rem;
+   }
+}
