@@ -169,7 +169,7 @@ header h2 {
    background-color: var(--white);
    width: 100%;
    margin-bottom: 2rem;
-   margin-top: 1rem;
+   padding-top: 1rem;
 }
 
 .models h1 {
@@ -343,8 +343,231 @@ header h2 {
    line-height: 35px;
 }
 
+.pier {
+   grid-area: pier;
+   background-image: url(img/akt.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+}
+   
+.dru {
+   grid-area: dru;
+}
+   
+.trze {
+   grid-area: trze;
+}
+   
+.czw {
+   grid-area: czw;
+   background-image: url(img/akt2.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+}
+   
+.pt {
+   grid-area: pt;
+   background-image: url(img/akt3.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+}
+   
+.szo {
+   grid-area: szo;
+}
 
-@media only screen and (max-width: 1200px) {
+.info {
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 600px 600px 600px;
+   display: grid;
+   grid-template-areas: 
+      'pier dru'
+      'trze czw'
+      'pt szo';
+   background-color: var(--dark);
+}
+
+.single-info-t h2 {
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 900px;
+   font-size: 4rem; color: var(--white);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 40px;
+   line-height: 35px;
+}
+
+.single-info-t p {
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 900px;
+   font-size: 1.3rem; color: var(--white);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 10px;
+   line-height: 35px;
+}
+
+@media only screen and (max-width: 1900px) {
+   
+   .info {
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 500px 500px 500px;
+   display: grid;
+   grid-template-areas: 
+      'pier dru'
+      'trze czw'
+      'pt szo';
+   background-color: var(--dark);
+   }
+
+   .single-info-t h2 {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 3.7rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      line-height: 35px;
+   }
+
+   .single-info-t p {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 1.3rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      line-height: 35px;
+   }
+
+}
+
+@media only screen and (max-width: 1600px) {
+   
+   .info {
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 450px 450px 450px;
+   display: grid;
+   grid-template-areas: 
+      'pier dru'
+      'trze czw'
+      'pt szo';
+   background-color: var(--dark);
+   }
+
+   .single-info-t h2 {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 3rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      line-height: 35px;
+   }
+
+   .single-info-t p {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 1rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      line-height: 30px;
+      padding: 0.5rem;
+   }
+
+}
+
+@media only screen and (max-width: 1350px) {
+   
+   .info {
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 350px 350px 350px;
+   display: grid;
+   grid-template-areas: 
+      'pier dru'
+      'trze czw'
+      'pt szo';
+   background-color: var(--dark);
+   }
+
+   .single-info-t h2 {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 2.3rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      line-height: 35px;
+   }
+
+   .single-info-t p {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 0.9rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+      line-height: 30px;
+      padding: 0.5rem;
+   }
+
+}
+
+@media only screen and (max-width: 1300px) {
+   
    .hide {
 	   opacity:1;
    }
@@ -550,6 +773,12 @@ header h2 {
       background-color: var(--dark);
    }
    
+   .config1:hover {
+      width: 250px;
+      height: 200px;
+      background-color: var(--lightdark);
+   }
+   
    .good {
       background-image: url(img/akt3.jpg);
       display: flex;
@@ -573,6 +802,51 @@ header h2 {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+   }
+   
+   .info {
+   grid-template-columns: 1fr;
+   grid-template-rows: 450px 350px 450px 350px 450px 350px;
+   display: grid;
+   grid-template-areas: 
+      'pier'
+      'dru'
+      'czw'
+      'trze'
+      'pt'
+      'szo';
+   background-color: var(--dark);
+   }
+
+   .single-info-t h2 {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 2.3rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      line-height: 35px;
+   }
+
+   .single-info-t p {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 0.9rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+      line-height: 30px;
+      padding: 0.5rem;
    }
 }
 
@@ -723,10 +997,10 @@ header h2 {
    .models h1 {
       font-family: 'Raleway', sans-serif;
       font-weight: 500;
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: var(--dark);
       text-transform: uppercase;
-      padding-top: 2rem;
+      padding-top: 3rem;
       padding-bottom: 2rem;
       grid-column-start: 1;
       padding-left: 0;
@@ -832,6 +1106,53 @@ header h2 {
       line-height: 30px;
    }
    
+   .info {
+   grid-template-columns: 1fr;
+   grid-template-rows: 300px 350px 300px 350px 300px 350px;
+   display: grid;
+   grid-template-areas: 
+      'pier'
+      'dru'
+      'czw'
+      'trze'
+      'pt'
+      'szo';
+   background-color: var(--dark);
+   }
+
+   .single-info-t h2 {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 2rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      line-height: 35px;
+   }
+
+   .single-info-t p {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 0.8rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+      line-height: 20px;
+      padding: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+   
 } 
 
 @media only screen and (max-width: 500px) {
@@ -853,10 +1174,10 @@ header h2 {
     .models h1 {
       font-family: 'Raleway', sans-serif;
       font-weight: 500;
-      font-size: 1.3rem;
+      font-size: 2rem;
       color: var(--dark);
       text-transform: uppercase;
-      padding-top: 2rem;
+      padding-top: 3rem;
       padding-bottom: 2rem;
       grid-column-start: 1;
       padding-left: 0;
@@ -948,4 +1269,71 @@ header h2 {
       margin-right: auto;
    }
    
-}
+   .info {
+   grid-template-columns: 1fr;
+   grid-template-rows: 200px 350px 200px 350px 200px 350px;
+   display: grid;
+   grid-template-areas: 
+      'pier'
+      'dru'
+      'czw'
+      'trze'
+      'pt'
+      'szo';
+   background-color: var(--dark);
+   }
+
+   .single-info-t h2 {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 1.6rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      line-height: 35px;
+   }
+
+   .single-info-t p {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 0.6rem; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+      line-height: 20px;
+      padding: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+   
+   .models {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      background-color: var(--white);
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+   }
+
+   .models h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: var(--dark);
+      text-transform: uppercase;
+      padding: 1rem;
+      grid-column-start: 1;
+      margin-left: auto;
+      margin-right: auto;
+   }
